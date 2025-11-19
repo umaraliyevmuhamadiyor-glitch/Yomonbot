@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-bot-1xbet
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: BOT_TOKEN
+        value: "8333425528:AAFsEhVlEyKYuHIbB96opCuH5BJIea1P-UU"
